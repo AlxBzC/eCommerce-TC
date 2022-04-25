@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+:root{
+	--gold1: #F4BD76;
+	--gold2: #F6CD8F;
+	--gray1: #ffffff80;
+	--gray2: #f7d9d990;
+	--black1: #1a1b1f;
+	--black2: #30353B;
+	--shadow:0 8px 8px;
+	--color_shadow: #00000033;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+body{
+	font-family: 'Roboto', sans-serif;
+
+}
+
+.container {
+	width: 90%;
+	max-width: 1200px;
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 100px 0;
+	height: auto;
+}
+.header {
+	height: 1000vh;
+	background-image: linear-gradient(to top, rgba(161, 140, 209, 0.5) 0%, rgba(251, 194, 235, 0.5) 100%);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	bottom: auto;
+}
+
+.hero {
+	display: flex;
+	min-height: 10vh;
+	
+}
+
+.nav__hero {
+	width: 100%;
+	color: #fff;
+	height: 90px;
+	border-bottom: 1px solid;
+	position: fixed;
+	background: linear-gradient(180deg, var(--black2) 0%, #1a1b1f 100%);
+}
+
+.nav__container{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: inherit;
+	padding: 0;
+
+}
+
+.bx {
+	padding: 10px;
+	cursor: pointer;
+
+}
+.link {
+	color: inherit;
+	font-weight: 300;
+	padding: 10px;
+}
+
+.ppal{
+	display: flex;
+    justify-content: center;
+}
+
+.subtitulo {
+	text-align: center;
+}
+
+.experts{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.cont-expert{
+	width: 30%;
+	text-align: center;
+	cursor: pointer;
+}
+
+.cont-expert img {
+	display: block;
+	margin: auto;
+	width: 80%;
+	padding: 20px;
+	border-radius: 40px;
+	transition: all 0.2s ease-in-out;
+	object-fit: contain;
+}
+
+.cont-expert:hover > img {
+    transform: scale(1.2);
+    opacity: 0.7;
+}
+
+/*Footer*/
+.logo {
+	cursor: pointer;
+}
+
+.contenedor {
+	background: linear-gradient(180deg, var(--black2) 0%, #1a1b1f 100%);
+	padding: 70px;
+	overflow: hidden;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: auto;
+	color: var(--gray1);
+	text-align: center;
+}
+
+.social-media-icon i {
+	font-size: 40px;
+	color: var(--gray2);
+	text-align: center;	
+}
+
+.copyr {
+	background: var(--black2);
+	height: 40px;
+	text-align: center;
+	padding: 10px;
+	color: var(--gray2);
+}
+.wtsa {
+	position: fixed;
+	right: 10px;
+	bottom: 0;
+	width: 80px;
+	z-index: 1000;
+	display: block;
+}
+
+.wtsa i {
+	font-size: 70px;
+	color: #1ebea5;
+}
